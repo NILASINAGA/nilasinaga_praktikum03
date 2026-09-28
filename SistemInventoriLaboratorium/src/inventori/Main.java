@@ -1,21 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package inventori;
 
-/**
- *
- * @author USER
- */
+import inventori.model.Barang;
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Barang barang = new Barang(
+                "BRG-001",
+                "Mouse USB",
+                "Periferal",
+                10,
+                "Lab 1");
+
+        System.out.println(
+                "SISTEM INVENTORI LABORATORIUM");
+
+        System.out.println(barang.tampilkanInfo());
+
+        System.out.println(
+                "Kerangka proyek siap. "
+                + "Data masih berada di memori.");
     }
-    
 }
